@@ -1,4 +1,3 @@
-//your code here
 const images = ['img1', 'img2', 'img3', 'img4', 'img5'];
 let selectedImages = [];
 let imageElements = [];
@@ -11,7 +10,7 @@ const h3 = document.getElementById('h');
 // Helper to shuffle array
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1)];
+    const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
@@ -46,7 +45,6 @@ function loadImages() {
 // Image click logic
 function handleImageClick(img) {
   if (selectedImages.includes(img)) return;
-
   if (selectedImages.length === 2) return;
 
   img.classList.add('selected');
